@@ -1,0 +1,25 @@
+html {
+    font-family: sans-serif;
+}
+
+body {
+    font-size: 23px;
+}
+
+.navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.nav-item {
+    font-weight: 300;
+}
+
+.nav-link.active {
+    font-weight: 500;
+}
+
+.dropdown-toggle::after {
+    content: none;
+}

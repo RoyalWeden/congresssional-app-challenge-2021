@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+    <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/general.css')}}">
+
+    <title>TITLE</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-light navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <ul class="mt-1" style="list-style-type: none; line-height: 70%">
+                    <li>
+                        <a href="{{url_for('home')}}" class="navbar-brand text-secondary" style="font-size: 20px; font-weight: 900;">4World</a>
+                    </li>
+                    <li>
+                        <a href="{{url_for('home')}}" class="navbar-brand text-secondary" style="font-size: 20px; font-weight: 900;">Hunger</a>
+                    </li>
+                </ul>
+                <button class="nav navbar-toggler navbar-right" type="button" data-bs-toggle="collapse" data-bs-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarContent">
+                    <ul class="nav navbar-nav navbar-center gap-4">
+                        <li class="nav-item">
+                            <a href="{{url_for('viewmap')}}" class="nav-link">Map</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{url_for('donate')}}" class="nav-link">Donate</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{url_for('volunteer')}}" class="nav-link">Volunteer</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{url_for('businesses')}}" class="nav-link">Businesses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="{{url_for('gethelp')}}" class="nav-link" style="color: red;">Get Help</a>
+                        </li>
+                        <li class="nav navbar-nav navbar-item dropdown" style="right: 0%;">
+                            <a href="{{url_for('home')}}" class="nav-link dropdown-toggle" id="navbarSearchDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarSearchDropdown">
+                                <div class="dropdown-item">
+                                    <form method="GET">
+                                        <input type="search" class="form-control" placeholder="Search" aria-label="Search" style="min-width: 300px;">
+                                    </form>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>
